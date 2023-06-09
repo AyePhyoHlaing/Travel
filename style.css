@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+    font-family: 'Caveat', cursive;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    
+}
+span{
+    color: skyblue;
+    font-size:3rem ;
+}
+/* header starts */
+header {
+    width: 96%;
+    background: #fff;
+    position: fixed; 
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    transform: .2s;
+  
+}
+header .head h2 {
+    color: skyblue;
+}
+header .navbar ul {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+header .navbar ul li {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+
+}
+header .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: skyblue;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: skyblue;
+    display: none;
+    cursor: pointer;
+}
+.header-active {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .2rem .3rem rgba(0,0,0,.5);
+    
+}
+/* header ends */
+/* home section starts */
+.home {
+    min-height: 100vh;
+    background: url(https://tse2.mm.bing.net/th?id=OIP.hyiYqGl1NUDpSRtrjapBaAHaE8&pid=Api&P=0&h=180);
+    background-size: cover;
+   position: relative;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    text-align: center; 
+   justify-content: space-around;
+    color: blue;
+    font-weight: 500;
+    position: relative;
+    flex-wrap: wrap;
+}
+.home .home-container{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    flex:1 1;
+}
+.home .home-container .head{
+    width: 45%;
+}
+.home .home-container .head h1 {
+    font-size: 4rem;
+    padding: 1.3rem;
+}
+.home .home-container .head p {
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+.home .home-container form {
+    background-color: #ffffffb7;
+    text-align: left;
+    padding : 2.5rem;
+    border-radius: 2%;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+.home .home-container form h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+ .home-container  form label {
+    font-size: 1.6rem;
+    
+}
+.home-container form input{
+    display: block;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 3rem;
+    border: none;
+    box-shadow: .1rem .2rem .2rem rgba(0,0,0,.5);
+    background-color: whitesmoke;
+}
+.home-container form input:hover {
+    border: none;
+}
+.home-container form button {
+    width: 7rem;
+    margin-top: .5rem;
+   height: 2rem;
+   border-radius: .5rem;
+   background:skyblue;
+   border: none;
+   font-size: 1.5rem;
+   color: #fff;
+}
+.home-container form button:hover {
+    background-color: black;
+}
+
+/* home section ends */
+
+/* feature section starts */
+.feature {
+    background:whitesmoke;
+    margin: 5rem 0;
+}
+.feature h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.feature .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+}
+.feature .card-container .card {
+    width: 25rem;
+    height: auto;
+    box-shadow: .2rem .2rem .2rem rgba(0,0,0,.5);
+    border-radius: 2%;
+    text-align: center;
+    position: relative;
+}
+.feature .card-container .card span{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    background: red;
+    margin: 1rem;
+    padding: .5rem;
+}
+.feature .card-container .card img {
+    width :100%;
+    height: 20rem;
+    border-radius: 2%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.feature .card-container .card h2 {
+    color: skyblue;
+    font-size: 2.5rem;
+}
+.feature .card-container .card p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+.feature .card-container .card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature .card-container .card i{
+    font-size: 1.3rem;
+     color: gold;
+     padding: .5rem;
+}
+.feature .card-container .card button {
+    background-color: skyblue;
+    font-size: 1.5rem;
+    color: #fff;
+    padding:0 1rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: .3rem .3rem .3rem rgba(0,0,0,.5);
+    margin-bottom: 1rem;
+}
+.feature .card-container .card button:hover {
+    background-color: black;
+}
+/* feature section ends */
+/* about section starts */
+.about h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.about .about-body {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.about .about-body .img img {
+    width: 45vw;
+}
+.about .about-body .text {
+    padding: 5rem 0;
+}
+.about .about-body .text h2 {
+    color: skyblue;
+    font-size: 2.5rem;
+}
+.about .about-body .text p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+.about .about-body .text button {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+.about .about-body .text .white {
+    background:white;
+    border: skyblue solid;
+    color: skyblue;
+}
+.about .about-body .text .white:hover {
+    background:black;
+}
+.about .about-body .text .skyblue {
+    background-color: skyblue;
+    border: black solid;
+    color: #fff;
+}
+.about .about-body .text .skyblue:hover {
+    background:black;
+}
+/* about section ends */
+/* gallery section starts */
+.gallery {
+   min-height: 100vh;
+   text-align: center;
+}
+.gallery h1 {
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+.gallery .photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:0 auto;
+}
+.gallery .photo-container .photo {
+    width: 23rem;
+    height: 18rem;
+    margin: 1.5rem;
+    position: relative;
+    box-shadow: .2rem .2rem .2rem rgba(0,0,0,.5);
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.gallery .photo-container .photo img {
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+.gallery .photo-container .photo .icon {
+    position:absolute;
+    top: 120%;
+    left: 0;
+   background: linear-gradient(transparent,#333);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .2s;
+}
+.gallery .photo-container .photo:hover .icon{
+    top: 0;
+    opacity: 1;
+}
+.gallery .photo-container .photo .icon a {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 .1rem .1rem black;
+    padding-bottom: 1rem;
+}
+.gallery .photo-container .photo .icon a:hover {
+    color: skyblue;
+}
+
+/* gallery section ends */
+/* review section starts */
+.review {
+    background :linear-gradient(rgba(135, 207, 235, 0.681),rgba(135, 207, 235, 0.681)),url(https://www.traveldailymedia.com/assets/2019/06/travel.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+.review span{
+    color: gold;
+}
+.review h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+}
+.review .review-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.review .review-body .card{
+    width: 18rem;
+    height: auto;
+    box-shadow: .2rem .2rem .2rem rgba(0,0,0,.5);
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+}
+.review .review-body .card .profile{
+    margin-top: -4rem;
+}
+.review .review-body .card .profile img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+   object-fit: cover;
+   border: .2rem solid white;
+}
+.review .review-body .card h3 {
+    font-size: 2rem;
+    color: skyblue;
+}
+.review .review-body .card p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+.review .review-body .card .icon i{
+    color: gold;
+}
+/* review section ends */
+.contact h1 {
+    font-size: 3rem;
+    margin: 3rem;
+    text-align: center;
+}
+.contact iframe {
+    width: 100%;
+    height: 35vh;
+}
+.contact form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.contact .contact-foot{
+    display: flex;
+    justify-content: space-around;
+}
+.contact .contact-foot .box h3 {
+    display: inline;
+    font-size: 1.7rem;
+}
+.contact .contact-foot .box i {
+    font-size: 1.5rem;
+}
+.contact .contact-foot .box p{
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+}
+.contact .contact-foot .box a {
+    display: block;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+.contact .contact-foot form input{
+    width: 17rem;
+    height: 2rem;
+    margin: 1rem;
+    border: .1rem solid skyblue;
+    font-size: 1.3rem;
+}
+.contact .contact-foot form textarea{
+    display: block;
+    width: 36rem;
+    height: 8rem;
+    margin: 1rem;
+    border: .1rem solid skyblue;
+    font-size: 1.3rem;
+}
+.contact .contact-foot form button{
+    border: .1rem solid skyblue;
+    width: 10rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+    color: skyblue;
+}
+.contact .contact-foot form button:hover {
+    background-color: skyblue;
+    color: #fff;
+}
+/* contact section end */
+footer {
+    text-align: center;
+    background:url(./blue-sea-sea-blue-sky-white-clouds-ocean-scenery.jpg.crdownload);
+    background-size:cover;
+    color: #fff;
+    padding: 1rem;
+}
+footer h1 {
+    font-size: 3rem;
+    
+}
+footer p{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+footer input {
+    width: 20rem;
+    height: 2.5rem;
+}
+footer button {
+    background-color: skyblue;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+}
+footer button:hover {
+    background-color: #fff;
+    border: skyblue;
+}
+
+.fa-times {
+    transform: rotate(180deg);
+    color:skyblue;
+}
+/* meadia query  */
+@media (max-width:770px) {
+    html{
+        font-size: 65%;
+    }
+    header .fa-bars{
+        display: block;
+        transition: .2s;
+    }
+    header .navbar {
+        position: fixed;
+        top: -100rem;left: 0;
+        width: 100%;
+         background-color: white;
+        border-radius: 1rem;
+        opacity:0 ;
+        transition:.2s linear;   
+         
+    } 
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar ul li a {
+        font-size: 3rem;
+        display: block;
+    } 
+    header .nav-toggle {
+        top:5.7rem;
+        opacity: 1;
+    }
+    .home .home-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature .card-container{
+       flex-wrap: wrap;
+    }
+    .feature .card-container .card {
+        margin: 1.5rem;
+    }
+    .about .about-body {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .gallery .photo-container{
+        flex-direction: column;
+    }
+    .review .review-body {
+       flex-wrap: wrap;
+       font-size: 1.3rem;
+    }
+    .contact form {
+       margin: 0 auto;
+    }
+    .contact .contact-foot .address {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact .contact-foot {
+        flex-direction: column-reverse;
+    }
+    
+}
